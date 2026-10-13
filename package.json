@@ -1,0 +1,24 @@
+{
+  "name": "opencode-usage-plugin",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/tui.js",
+  "types": "dist/tui.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "lint": "eslint src --ext ts,tsx"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": "*",
+    "@opentui/core": "*",
+    "@opentui/solid": "*",
+    "solid-js": "^1.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "opencode": {
+    "entry": "./tui"
+  }
+}
