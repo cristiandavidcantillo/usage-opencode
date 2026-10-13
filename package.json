@@ -10,9 +10,6 @@
     "lint": "eslint src --ext ts,tsx"
   },
   "peerDependencies": {
-    "@opencode/plugin": "*",
-    "@opentui/core": "*",
-    "@opentui/solid": "*",
     "solid-js": "^1.8.0"
   },
   "devDependencies": {
