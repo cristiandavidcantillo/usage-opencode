@@ -24,7 +24,7 @@ export function useSessionCost(sessionId: Accessor<string | undefined>) {
 
     async function fetchCost() {
       try {
-        const data = await ctx.data.session.cost(id);
+        const data = await ctx.data.session.cost(id as string);
         if (!cancelled && data) {
           setCost({
             inputTokens: data.inputTokens ?? 0,
@@ -62,7 +62,7 @@ export function useSessionMessages(sessionId: Accessor<string | undefined>) {
 
     async function fetchMessages() {
       try {
-        const data = await ctx.data.session.message.list(id);
+        const data = await ctx.data.session.message.list(id as string);
         if (!cancelled && Array.isArray(data)) {
           setMessages(data);
         }
